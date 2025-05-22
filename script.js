@@ -26,7 +26,6 @@ function adjustFontSize(element) {
     element.offsetWidth < document.body.clientWidth - 46 &&
     fontSize < 1000
   ) {
-    console.log(element.clientWidth, document.body.clientWidth);
     fontSize++;
     element.style.fontSize = fontSize + "px";
   }
