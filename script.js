@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function adjustFontSize(element) {
   const containerWidth = element.parentElement.offsetWidth;
-  let fontSize = 10; // Стартовый размер
+  let fontSize = 10;
   element.style.fontSize = fontSize + "px";
 
   while (
@@ -31,7 +31,6 @@ function adjustFontSize(element) {
   }
 }
 
-// Пример вызова для элемента с id="myText"
 setInterval(() =>
   adjustFontSize(document.querySelector(".footer__title"), 1500)
 );
